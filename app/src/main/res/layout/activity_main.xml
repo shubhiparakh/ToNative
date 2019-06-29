@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_margin="40dp"
+        android:textSize="60dp"
+        android:gravity="center_horizontal"
+        android:layout_above="@+id/SimageView"
+        android:text="ToNative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_gravity="center"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/img1"
+        app:civ_border_color="#000000"
+        app:civ_border_width="2dp"
+        app:civ_border_overlay="true"
+        app:civ_circle_background_color="#000000"
+        android:id="@+id/SimageView"
+        android:layout_centerInParent="true" />
+
+    <ProgressBar
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+</RelativeLayout>
